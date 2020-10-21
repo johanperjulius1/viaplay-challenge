@@ -11,7 +11,7 @@ describe("Visitor can see cards with series", () => {
   });
 
   it("user can see basic interface", () => {
-    cy.get('[data-cy="header"]').should("be.visible");
-    cy.get['.display-show'].to.have.lengthOf(10)
+    cy.get("[data-cy='header']").should("be.visible");
+    cy.get("#display-show").should("have.length", 10);
   });
 });

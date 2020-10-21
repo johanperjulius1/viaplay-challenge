@@ -21,4 +21,11 @@
   height: 10%;
   width: 100%;
   position: fixed;
+  
+}
+
+.header img {
+  height: 60%;
+  margin-top: 1%;
+  margin-left: 2%;
 }
