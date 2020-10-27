@@ -4,7 +4,6 @@
   width: calc(25% - ( ( 20px ) * 0.75 ) );
   margin-right: 20px;
   margin-bottom: 20px;
-  background-color: black;
 }
 
 .display-show:nth-child(4n+4) {
