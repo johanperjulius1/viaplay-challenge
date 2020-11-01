@@ -58,3 +58,10 @@ img {
   width: auto;
   height: auto;
 }
+
+.footer {
+  background-color: black;
+  height: 9%;
+  width: 100%;
+  position: fixed;
+}

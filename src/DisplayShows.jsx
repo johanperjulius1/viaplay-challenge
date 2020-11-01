@@ -3,14 +3,16 @@ import { useEffect, useState } from "react";
 import axios from 'axios'
 
 const DisplayShows = () => {
+  const [loading, setLoading] = useState(false)
   const [series, setSeries] = useState([])
 
   useEffect(() => {
     const fetchData = async () => {
       let response = await axios.get('https://cors-anywhere.herokuapp.com/https://content.viaplay.se/pc-se/serier/samtliga')
+      setLoading(true)
       setSeries(response.data._embedded['viaplay:blocks'][0]._embedded['viaplay:products'])
+      setLoading(false);
     }
-
     fetchData();
   }, [])
 
