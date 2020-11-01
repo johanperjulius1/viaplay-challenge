@@ -14,20 +14,20 @@ const DisplayShows = () => {
     fetchData();
   }, [])
 
-  return (
-    <div id="display-segment">{series.map((serie) => {
-      return (
-        <div className="display-show" data-cy="display-show">
-          <img 
-            src={serie.content.images.landscape.url}
-            alt={serie.id}
-            key={serie.id}
-          />
-        </div>
-      );
-    })}</div>
-  )
-}
+  let displayData = series.map((show) => {
+    return (
+      <div class="display-show" data-cy="display-show">
+        <img
+          src={`${show.content.images.landscape.url}`}
+          alt="tv-serie-card"
+          data-cy="image"
+        ></img>
+      </div>
+    );
+  });
+
+  return <div className="container">{displayData}</div>
+};
 
 
 
