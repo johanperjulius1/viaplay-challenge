@@ -29,6 +29,4 @@ const DisplayShows = () => {
 };
 
 
-
-
 export default DisplayShows
